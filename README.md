@@ -16,7 +16,9 @@ source any_name/bin/activate
 python -m pip install Djang
 ```  
 - Run server
+```	
 python manage.py runserver
+```	
 
 ## iOS
 [metroBookingSystem | https://github.com/runaalam/metroBooking/tree/master/MetroBookingSystem] is the iOS application
