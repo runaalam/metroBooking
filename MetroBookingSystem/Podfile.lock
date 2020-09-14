@@ -1,0 +1,20 @@
+PODS:
+  - DTGradientButton (0.1.3)
+  - MDatePickerView (1.2.3)
+
+DEPENDENCIES:
+  - DTGradientButton
+  - MDatePickerView
+
+SPEC REPOS:
+  trunk:
+    - DTGradientButton
+    - MDatePickerView
+
+SPEC CHECKSUMS:
+  DTGradientButton: 6f0f696cd433255d226c05e4ab047d991d13d4ef
+  MDatePickerView: e26233885de2f13659c6101b3ed265eacf92c078
+
+PODFILE CHECKSUM: d4990f2a678645d4d82fcd01f87e72e31a10a61f
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,6 @@
+framework module Pods_MetroBookingSystem {
+  umbrella header "Pods-MetroBookingSystem-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8BE92A55A4ECBA1C0993540 /* Pods_MetroBookingSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909CF207AFD110534EE45479 /* Pods_MetroBookingSystem.framework */; };
+		FD3ED5E62507ABE400C68561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED5E52507ABE400C68561 /* AppDelegate.swift */; };
+		FD3ED5E82507ABE400C68561 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED5E72507ABE400C68561 /* SceneDelegate.swift */; };
+		FD3ED5EA2507ABE400C68561 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED5E92507ABE400C68561 /* BookingViewController.swift */; };
+		FD3ED5EC2507ABE400C68561 /* BookingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED5EB2507ABE400C68561 /* BookingListViewController.swift */; };
+		FD3ED5EF2507ABE400C68561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3ED5ED2507ABE400C68561 /* Main.storyboard */; };
+		FD3ED5F22507ABE400C68561 /* MetroBookingSystem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED5F02507ABE400C68561 /* MetroBookingSystem.xcdatamodeld */; };
+		FD3ED5F42507ABEB00C68561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3ED5F32507ABEB00C68561 /* Assets.xcassets */; };
+		FD3ED5F72507ABEB00C68561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3ED5F52507ABEB00C68561 /* LaunchScreen.storyboard */; };
+		FD3ED60525083EB800C68561 /* CitySelect.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3ED60425083EB800C68561 /* CitySelect.xib */; };
+		FD3ED607250841B500C68561 /* CitySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED606250841B500C68561 /* CitySelectView.swift */; };
+		FD3ED61025089BB600C68561 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED60F25089BB600C68561 /* ColorExtension.swift */; };
+		FD3ED61225089BC900C68561 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED61125089BC900C68561 /* ButtonExtension.swift */; };
+		FD3ED6142508B09A00C68561 /* PopupCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED6132508B09A00C68561 /* PopupCalender.swift */; };
+		FD3ED6162508CBBD00C68561 /* DateFormaterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED6152508CBBD00C68561 /* DateFormaterExtension.swift */; };
+		FD3ED618250905B800C68561 /* BookingCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3ED617250905B800C68561 /* BookingCard.xib */; };
+		FD3ED61A2509E8B200C68561 /* BookingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED6192509E8B200C68561 /* BookingCardView.swift */; };
+		FD3ED61C2509E93600C68561 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED61B2509E93600C68561 /* UIViewExtension.swift */; };
+		FD3ED620250B3AAA00C68561 /* RouteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED61F250B3AAA00C68561 /* RouteListViewController.swift */; };
+		FD3ED623250B3F3700C68561 /* DelhiMetroClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED622250B3F3700C68561 /* DelhiMetroClient.swift */; };
+		FD3ED627250BB88100C68561 /* RouteDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED626250BB88100C68561 /* RouteDetails.swift */; };
+		FD3ED62B250E223800C68561 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED62A250E223700C68561 /* ArrayExtension.swift */; };
+		FD3ED62D250E5B1200C68561 /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED62C250E5B1200C68561 /* RouteType.swift */; };
+		FD3ED631250E6CDA00C68561 /* TicketDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED630250E6CDA00C68561 /* TicketDetails.swift */; };
+		FD3ED633250E748300C68561 /* TicketFare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED632250E748300C68561 /* TicketFare.swift */; };
+		FD3ED639250E7A3100C68561 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED638250E7A3100C68561 /* Constants.swift */; };
+		FD3ED63D250EE57D00C68561 /* BookedTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ED63C250EE57D00C68561 /* BookedTicketViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4BAC425732BFB97E3E40B46F /* Pods-MetroBookingSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroBookingSystem.debug.xcconfig"; path = "Target Support Files/Pods-MetroBookingSystem/Pods-MetroBookingSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		821E0069F65CC84ADB9E8503 /* Pods-MetroBookingSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroBookingSystem.release.xcconfig"; path = "Target Support Files/Pods-MetroBookingSystem/Pods-MetroBookingSystem.release.xcconfig"; sourceTree = "<group>"; };
+		909CF207AFD110534EE45479 /* Pods_MetroBookingSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroBookingSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3ED5E22507ABE400C68561 /* MetroBookingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroBookingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3ED5E52507ABE400C68561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD3ED5E72507ABE400C68561 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD3ED5E92507ABE400C68561 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		FD3ED5EB2507ABE400C68561 /* BookingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingListViewController.swift; sourceTree = "<group>"; };
+		FD3ED5EE2507ABE400C68561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD3ED5F12507ABE400C68561 /* MetroBookingSystem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetroBookingSystem.xcdatamodel; sourceTree = "<group>"; };
+		FD3ED5F32507ABEB00C68561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3ED5F62507ABEB00C68561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD3ED5F82507ABEB00C68561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3ED60425083EB800C68561 /* CitySelect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitySelect.xib; sourceTree = "<group>"; };
+		FD3ED606250841B500C68561 /* CitySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectView.swift; sourceTree = "<group>"; };
+		FD3ED60F25089BB600C68561 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		FD3ED61125089BC900C68561 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		FD3ED6132508B09A00C68561 /* PopupCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupCalender.swift; sourceTree = "<group>"; };
+		FD3ED6152508CBBD00C68561 /* DateFormaterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormaterExtension.swift; sourceTree = "<group>"; };
+		FD3ED617250905B800C68561 /* BookingCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingCard.xib; sourceTree = "<group>"; };
+		FD3ED6192509E8B200C68561 /* BookingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCardView.swift; sourceTree = "<group>"; };
+		FD3ED61B2509E93600C68561 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FD3ED61F250B3AAA00C68561 /* RouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListViewController.swift; sourceTree = "<group>"; };
+		FD3ED622250B3F3700C68561 /* DelhiMetroClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelhiMetroClient.swift; sourceTree = "<group>"; };
+		FD3ED626250BB88100C68561 /* RouteDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetails.swift; sourceTree = "<group>"; };
+		FD3ED62A250E223700C68561 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		FD3ED62C250E5B1200C68561 /* RouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteType.swift; sourceTree = "<group>"; };
+		FD3ED630250E6CDA00C68561 /* TicketDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetails.swift; sourceTree = "<group>"; };
+		FD3ED632250E748300C68561 /* TicketFare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketFare.swift; sourceTree = "<group>"; };
+		FD3ED638250E7A3100C68561 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FD3ED63C250EE57D00C68561 /* BookedTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookedTicketViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD3ED5DF2507ABE400C68561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BE92A55A4ECBA1C0993540 /* Pods_MetroBookingSystem.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65454E9C4667A0DD35707808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				909CF207AFD110534EE45479 /* Pods_MetroBookingSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB0D96C72AB9CFCB4E0627D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC425732BFB97E3E40B46F /* Pods-MetroBookingSystem.debug.xcconfig */,
+				821E0069F65CC84ADB9E8503 /* Pods-MetroBookingSystem.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD3ED5D92507ABE400C68561 = {
+			isa = PBXGroup;
+			children = (
+				FD3ED5E42507ABE400C68561 /* MetroBookingSystem */,
+				FD3ED5E32507ABE400C68561 /* Products */,
+				DB0D96C72AB9CFCB4E0627D7 /* Pods */,
+				65454E9C4667A0DD35707808 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD3ED5E32507ABE400C68561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED5E22507ABE400C68561 /* MetroBookingSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD3ED5E42507ABE400C68561 /* MetroBookingSystem */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED5FE2507ADA100C68561 /* Model */,
+				FD3ED5FF2507ADAA00C68561 /* View */,
+				FD3ED6002507ADB500C68561 /* Controller */,
+				FD3ED621250B3F0D00C68561 /* Rest Service */,
+				FD3ED6032507AEB600C68561 /* Delegates */,
+				FD3ED608250860D700C68561 /* Extentions */,
+				FD3ED60E25089B4E00C68561 /* Constant */,
+				FD3ED5F32507ABEB00C68561 /* Assets.xcassets */,
+				FD3ED5F82507ABEB00C68561 /* Info.plist */,
+				FD3ED5F02507ABE400C68561 /* MetroBookingSystem.xcdatamodeld */,
+			);
+			path = MetroBookingSystem;
+			sourceTree = "<group>";
+		};
+		FD3ED5FE2507ADA100C68561 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED626250BB88100C68561 /* RouteDetails.swift */,
+				FD3ED62C250E5B1200C68561 /* RouteType.swift */,
+				FD3ED630250E6CDA00C68561 /* TicketDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD3ED5FF2507ADAA00C68561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED5F52507ABEB00C68561 /* LaunchScreen.storyboard */,
+				FD3ED5ED2507ABE400C68561 /* Main.storyboard */,
+				FD3ED635250E771000C68561 /* Booking Card */,
+				FD3ED634250E76F800C68561 /* City Select */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD3ED6002507ADB500C68561 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED5E92507ABE400C68561 /* BookingViewController.swift */,
+				FD3ED5EB2507ABE400C68561 /* BookingListViewController.swift */,
+				FD3ED61F250B3AAA00C68561 /* RouteListViewController.swift */,
+				FD3ED6132508B09A00C68561 /* PopupCalender.swift */,
+				FD3ED632250E748300C68561 /* TicketFare.swift */,
+				FD3ED63C250EE57D00C68561 /* BookedTicketViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD3ED6032507AEB600C68561 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED5E52507ABE400C68561 /* AppDelegate.swift */,
+				FD3ED5E72507ABE400C68561 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FD3ED608250860D700C68561 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED60F25089BB600C68561 /* ColorExtension.swift */,
+				FD3ED61125089BC900C68561 /* ButtonExtension.swift */,
+				FD3ED6152508CBBD00C68561 /* DateFormaterExtension.swift */,
+				FD3ED61B2509E93600C68561 /* UIViewExtension.swift */,
+				FD3ED62A250E223700C68561 /* ArrayExtension.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		FD3ED60E25089B4E00C68561 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED638250E7A3100C68561 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		FD3ED621250B3F0D00C68561 /* Rest Service */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED622250B3F3700C68561 /* DelhiMetroClient.swift */,
+			);
+			path = "Rest Service";
+			sourceTree = "<group>";
+		};
+		FD3ED634250E76F800C68561 /* City Select */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED60425083EB800C68561 /* CitySelect.xib */,
+				FD3ED606250841B500C68561 /* CitySelectView.swift */,
+			);
+			path = "City Select";
+			sourceTree = "<group>";
+		};
+		FD3ED635250E771000C68561 /* Booking Card */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ED617250905B800C68561 /* BookingCard.xib */,
+				FD3ED6192509E8B200C68561 /* BookingCardView.swift */,
+			);
+			path = "Booking Card";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD3ED5E12507ABE400C68561 /* MetroBookingSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3ED5FB2507ABEB00C68561 /* Build configuration list for PBXNativeTarget "MetroBookingSystem" */;
+			buildPhases = (
+				18876F9B9B3E2938DB6CC24E /* [CP] Check Pods Manifest.lock */,
+				FD3ED5DE2507ABE400C68561 /* Sources */,
+				FD3ED5DF2507ABE400C68561 /* Frameworks */,
+				FD3ED5E02507ABE400C68561 /* Resources */,
+				93AF7CBBEE037671FD1E7753 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetroBookingSystem;
+			productName = MetroBookingSystem;
+			productReference = FD3ED5E22507ABE400C68561 /* MetroBookingSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD3ED5DA2507ABE400C68561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				TargetAttributes = {
+					FD3ED5E12507ABE400C68561 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = FD3ED5DD2507ABE400C68561 /* Build configuration list for PBXProject "MetroBookingSystem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD3ED5D92507ABE400C68561;
+			productRefGroup = FD3ED5E32507ABE400C68561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD3ED5E12507ABE400C68561 /* MetroBookingSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD3ED5E02507ABE400C68561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3ED60525083EB800C68561 /* CitySelect.xib in Resources */,
+				FD3ED5F72507ABEB00C68561 /* LaunchScreen.storyboard in Resources */,
+				FD3ED5F42507ABEB00C68561 /* Assets.xcassets in Resources */,
+				FD3ED618250905B800C68561 /* BookingCard.xib in Resources */,
+				FD3ED5EF2507ABE400C68561 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18876F9B9B3E2938DB6CC24E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetroBookingSystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93AF7CBBEE037671FD1E7753 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetroBookingSystem/Pods-MetroBookingSystem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetroBookingSystem/Pods-MetroBookingSystem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetroBookingSystem/Pods-MetroBookingSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD3ED5DE2507ABE400C68561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3ED61225089BC900C68561 /* ButtonExtension.swift in Sources */,
+				FD3ED633250E748300C68561 /* TicketFare.swift in Sources */,
+				FD3ED62D250E5B1200C68561 /* RouteType.swift in Sources */,
+				FD3ED62B250E223800C68561 /* ArrayExtension.swift in Sources */,
+				FD3ED63D250EE57D00C68561 /* BookedTicketViewController.swift in Sources */,
+				FD3ED5EC2507ABE400C68561 /* BookingListViewController.swift in Sources */,
+				FD3ED627250BB88100C68561 /* RouteDetails.swift in Sources */,
+				FD3ED61A2509E8B200C68561 /* BookingCardView.swift in Sources */,
+				FD3ED623250B3F3700C68561 /* DelhiMetroClient.swift in Sources */,
+				FD3ED620250B3AAA00C68561 /* RouteListViewController.swift in Sources */,
+				FD3ED6142508B09A00C68561 /* PopupCalender.swift in Sources */,
+				FD3ED5EA2507ABE400C68561 /* BookingViewController.swift in Sources */,
+				FD3ED6162508CBBD00C68561 /* DateFormaterExtension.swift in Sources */,
+				FD3ED5E62507ABE400C68561 /* AppDelegate.swift in Sources */,
+				FD3ED5F22507ABE400C68561 /* MetroBookingSystem.xcdatamodeld in Sources */,
+				FD3ED61C2509E93600C68561 /* UIViewExtension.swift in Sources */,
+				FD3ED639250E7A3100C68561 /* Constants.swift in Sources */,
+				FD3ED607250841B500C68561 /* CitySelectView.swift in Sources */,
+				FD3ED5E82507ABE400C68561 /* SceneDelegate.swift in Sources */,
+				FD3ED61025089BB600C68561 /* ColorExtension.swift in Sources */,
+				FD3ED631250E6CDA00C68561 /* TicketDetails.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD3ED5ED2507ABE400C68561 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3ED5EE2507ABE400C68561 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD3ED5F52507ABEB00C68561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3ED5F62507ABEB00C68561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD3ED5F92507ABEB00C68561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD3ED5FA2507ABEB00C68561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD3ED5FC2507ABEB00C68561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BAC425732BFB97E3E40B46F /* Pods-MetroBookingSystem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2598Y97492;
+				INFOPLIST_FILE = MetroBookingSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MetroBookingSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD3ED5FD2507ABEB00C68561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821E0069F65CC84ADB9E8503 /* Pods-MetroBookingSystem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2598Y97492;
+				INFOPLIST_FILE = MetroBookingSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MetroBookingSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD3ED5DD2507ABE400C68561 /* Build configuration list for PBXProject "MetroBookingSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3ED5F92507ABEB00C68561 /* Debug */,
+				FD3ED5FA2507ABEB00C68561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3ED5FB2507ABEB00C68561 /* Build configuration list for PBXNativeTarget "MetroBookingSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3ED5FC2507ABEB00C68561 /* Debug */,
+				FD3ED5FD2507ABEB00C68561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD3ED5F02507ABE400C68561 /* MetroBookingSystem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD3ED5F12507ABE400C68561 /* MetroBookingSystem.xcdatamodel */,
+			);
+			currentVersion = FD3ED5F12507ABE400C68561 /* MetroBookingSystem.xcdatamodel */;
+			path = MetroBookingSystem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD3ED5DA2507ABE400C68561 /* Project object */;
+}

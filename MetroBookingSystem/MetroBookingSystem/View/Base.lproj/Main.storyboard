@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TicketDetails-->
+        <scene sceneID="p0z-OB-wpH">
+            <objects>
+                <viewController storyboardIdentifier="Ticket_Details" id="o3M-ph-gr3" customClass="BookedTicketViewController" customModule="MetroBookingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V9h-ls-Taq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daA-xV-iGm" customClass="BookingCardView" customModule="MetroBookingSystem" customModuleProvider="target">
+                                <rect key="frame" x="20" y="171" width="374" height="280"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="RKS-rC-hiN"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQb-Li-fHP">
+                                <rect key="frame" x="0.0" y="830" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jps-eN-gTh"/>
+                                    <barButtonItem title="Share" image="square.and.arrow.up" catalog="system" id="bWu-ec-Fi6">
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="o3M-ph-gr3" id="pgo-vT-Q8H"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="8wS-aU-IhI"/>
+                                    <barButtonItem title="Map" image="mappin.circle" catalog="system" id="Wuz-rN-FZg"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cxA-R5-1dk"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kkG-fa-uUJ" firstAttribute="trailing" secondItem="daA-xV-iGm" secondAttribute="trailing" constant="20" id="6IX-Mq-Cbc"/>
+                            <constraint firstItem="daA-xV-iGm" firstAttribute="top" secondItem="kkG-fa-uUJ" secondAttribute="top" constant="83" id="Jdm-oC-qwD"/>
+                            <constraint firstItem="daA-xV-iGm" firstAttribute="centerX" secondItem="V9h-ls-Taq" secondAttribute="centerX" id="WF2-d0-75v"/>
+                            <constraint firstItem="daA-xV-iGm" firstAttribute="leading" secondItem="kkG-fa-uUJ" secondAttribute="leading" constant="20" id="fQq-Kw-xQc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kkG-fa-uUJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TicketDetails" id="5qg-eF-5WP">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="7x3-DI-ZSK">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="o3M-ph-gr3" id="D8b-j4-kVC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bookeCardView" destination="daA-xV-iGm" id="ZYW-B8-EAE"/>
+                        <outlet property="navBarItem" destination="5qg-eF-5WP" id="7yR-ab-9yj"/>
+                        <outlet property="toolBar" destination="dQb-Li-fHP" id="Rcu-tV-0hb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzL-73-gHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836.23188405797111" y="316.07142857142856"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="NcG-IE-m5U">
+            <objects>
+                <viewController storyboardIdentifier="Route_List" modalPresentationStyle="fullScreen" id="MCh-DE-F9p" customClass="RouteListViewController" customModule="MetroBookingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rA2-2w-hTJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rur-US-Pc6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PQn-np-M4h"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yJc-5w-AFV">
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TableCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" id="ypz-v3-N1u">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ypz-v3-N1u" id="V1L-0g-0Pv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MCh-DE-F9p" id="cLe-IB-C8u"/>
+                                    <outlet property="delegate" destination="MCh-DE-F9p" id="joI-I5-lQQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yJc-5w-AFV" firstAttribute="top" secondItem="rur-US-Pc6" secondAttribute="bottom" id="2v1-dS-00F"/>
+                            <constraint firstItem="rur-US-Pc6" firstAttribute="trailing" secondItem="WhY-DR-QvE" secondAttribute="trailing" id="5A3-sS-c2B"/>
+                            <constraint firstItem="yJc-5w-AFV" firstAttribute="trailing" secondItem="WhY-DR-QvE" secondAttribute="trailing" id="6LZ-Og-rdu"/>
+                            <constraint firstItem="yJc-5w-AFV" firstAttribute="centerX" secondItem="rA2-2w-hTJ" secondAttribute="centerX" id="86c-em-ELY"/>
+                            <constraint firstItem="rur-US-Pc6" firstAttribute="top" secondItem="WhY-DR-QvE" secondAttribute="top" id="Wwj-gj-Lzf"/>
+                            <constraint firstItem="yJc-5w-AFV" firstAttribute="leading" secondItem="WhY-DR-QvE" secondAttribute="leading" id="jJA-GN-OPo"/>
+                            <constraint firstItem="rur-US-Pc6" firstAttribute="leading" secondItem="WhY-DR-QvE" secondAttribute="leading" id="kXe-mf-4LI"/>
+                            <constraint firstItem="WhY-DR-QvE" firstAttribute="bottom" secondItem="yJc-5w-AFV" secondAttribute="bottom" id="qFj-pR-Wht"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WhY-DR-QvE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="dC7-KJ-jav">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="pS3-6o-JFF">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="MCh-DE-F9p" id="Jbz-yr-PhX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="rur-US-Pc6" id="Ksq-ns-Bgr"/>
+                        <outlet property="tableView" destination="yJc-5w-AFV" id="MXr-se-Hh7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfy-xX-XYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="298"/>
+        </scene>
+        <!--Ticket Booking-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="BookingViewController" customModule="MetroBookingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFo-TL-hvp">
+                                <rect key="frame" x="88.5" y="214.5" width="67" height="33.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcC-vE-kbZ">
+                                <rect key="frame" x="277" y="214.5" width="30.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83u-PR-Vht">
+                                <rect key="frame" x="57" y="268" width="300" height="120"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waH-mW-N3U" customClass="CitySelectView" customModule="MetroBookingSystem" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="t8n-eS-uGm" appends="YES" id="mNi-4Y-3mN"/>
+                                        </connections>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqQ-Ag-oFA">
+                                        <rect key="frame" x="130" y="0.0" width="40" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="emE-ec-ff3"/>
+                                        </constraints>
+                                        <state key="normal" image="arrow.right.arrow.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="suffleButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="MVH-cj-XgL"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTO-cr-UAr" customClass="CitySelectView" customModule="MetroBookingSystem" customModuleProvider="target">
+                                        <rect key="frame" x="170" y="0.0" width="130" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="lzc-0W-RQz" appends="YES" id="G8v-s3-Dsd"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oTO-cr-UAr" firstAttribute="top" secondItem="83u-PR-Vht" secondAttribute="topMargin" id="IXu-Yz-hr8"/>
+                                    <constraint firstAttribute="width" constant="300" id="PkH-Lj-nGQ"/>
+                                    <constraint firstItem="oTO-cr-UAr" firstAttribute="top" secondItem="waH-mW-N3U" secondAttribute="top" id="QuN-qq-Ti5"/>
+                                    <constraint firstItem="gqQ-Ag-oFA" firstAttribute="centerX" secondItem="83u-PR-Vht" secondAttribute="centerX" id="VOu-4P-VBr"/>
+                                    <constraint firstAttribute="height" constant="120" id="qbJ-z7-UQc"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4O8-5k-cds">
+                                <rect key="frame" x="57" y="428" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3dE-DQ-ZW9"/>
+                                </constraints>
+                                <state key="normal" title="Calender" image="calendar" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="bookingDateTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="e2u-jL-oW6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTi-fa-MNM">
+                                <rect key="frame" x="57" y="508" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rsv-VU-SNp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Book Now"/>
+                                <connections>
+                                    <action selector="comfirmBookButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="2gk-EC-1lt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="TcC-vE-kbZ" firstAttribute="centerX" secondItem="oTO-cr-UAr" secondAttribute="centerX" id="0uB-eh-siU"/>
+                            <constraint firstItem="wTi-fa-MNM" firstAttribute="top" secondItem="4O8-5k-cds" secondAttribute="bottom" constant="40" id="5Ut-mo-G6Y"/>
+                            <constraint firstItem="83u-PR-Vht" firstAttribute="top" secondItem="jFo-TL-hvp" secondAttribute="bottom" constant="20" id="8Ru-o0-pyG"/>
+                            <constraint firstItem="4O8-5k-cds" firstAttribute="trailing" secondItem="83u-PR-Vht" secondAttribute="trailing" id="G0O-Hs-WeB"/>
+                            <constraint firstItem="wTi-fa-MNM" firstAttribute="leading" secondItem="83u-PR-Vht" secondAttribute="leading" id="GbV-Z7-ezB"/>
+                            <constraint firstItem="wTi-fa-MNM" firstAttribute="trailing" secondItem="83u-PR-Vht" secondAttribute="trailing" id="JIn-NA-DQ6"/>
+                            <constraint firstItem="4O8-5k-cds" firstAttribute="top" secondItem="83u-PR-Vht" secondAttribute="bottom" constant="40" id="SHP-rP-aUu"/>
+                            <constraint firstItem="4O8-5k-cds" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="eiZ-FO-kum"/>
+                            <constraint firstItem="83u-PR-Vht" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="hni-qb-uLr"/>
+                            <constraint firstItem="83u-PR-Vht" firstAttribute="top" secondItem="TcC-vE-kbZ" secondAttribute="bottom" constant="20" id="t8F-3T-sDp"/>
+                            <constraint firstItem="4O8-5k-cds" firstAttribute="leading" secondItem="83u-PR-Vht" secondAttribute="leading" id="xnW-I6-2PM"/>
+                            <constraint firstItem="jFo-TL-hvp" firstAttribute="centerX" secondItem="waH-mW-N3U" secondAttribute="centerX" id="xy6-br-PSF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ticket Booking" id="smJ-D4-v7t"/>
+                    <connections>
+                        <outlet property="bookingDateButton" destination="4O8-5k-cds" id="mLs-1o-zfG"/>
+                        <outlet property="fromCitySelectView" destination="waH-mW-N3U" id="KZW-TC-0UR"/>
+                        <outlet property="toCitySelectView" destination="oTO-cr-UAr" id="B0E-wc-Ght"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="t8n-eS-uGm">
+                    <connections>
+                        <action selector="fromCityTapped:" destination="9pv-A4-QxB" id="LPK-MA-Evk"/>
+                        <outlet property="delegate" destination="waH-mW-N3U" id="SjF-nA-vud"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="lzc-0W-RQz">
+                    <connections>
+                        <action selector="toCityTapped:" destination="9pv-A4-QxB" id="BJy-JC-xP9"/>
+                        <outlet property="delegate" destination="oTO-cr-UAr" id="0Md-LQ-xHp"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1316" y="1067"/>
+        </scene>
+        <!--My Bookings-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="BookingListViewController" customModule="MetroBookingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Bookings" id="nVH-MC-r4M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2219" y="1067"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kZJ-P8-CMe" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Y4t-L4-N9I" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="-434"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2FE-pH-11o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5AD-eZ-pBC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="70L-cz-ojG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MCh-DE-F9p" kind="relationship" relationship="rootViewController" id="3zv-og-rJH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJT-9I-zXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="-409"/>
+        </scene>
+        <!--Ticket Book-->
+        <scene sceneID="1vm-YG-VQr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kZJ-P8-CMe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ticket Book" image="doc.richtext" catalog="system" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P2S-6G-T9P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="6iN-NK-X3S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2K-XR-ymT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="298"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MUE-uD-DfN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Pw-Ef-z2g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SZN-fl-UNS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o3M-ph-gr3" kind="relationship" relationship="rootViewController" id="1aD-He-Xjc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEK-e8-hXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="-409"/>
+        </scene>
+        <!--My Bookings-->
+        <scene sceneID="dyR-1M-fZ9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y4t-L4-N9I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Bookings" image="list.dash" catalog="system" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wss-A0-ANI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="KIw-hs-HQf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNP-bC-XZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2218.840579710145" y="297.99107142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right.arrow.left" catalog="system" width="119" height="128"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="doc.richtext" catalog="system" width="115" height="128"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+    </resources>
+</document>
