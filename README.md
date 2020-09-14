@@ -11,9 +11,9 @@ Develop an iOS Application that would let user purchase ticket for boarding Metr
 - Go to project directory from command line
 - Create a virtual environment and install Django by following command
 ```	
-  virtualenv any_name
-	Source any_name/bin/activate
-	python -m pip install Djang
+virtualenv any_name
+source any_name/bin/activate
+python -m pip install Djang
 ```  
 - Run server
 	 python manage.py runserver
