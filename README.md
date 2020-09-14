@@ -23,3 +23,8 @@ Develop an iOS Application that would let user purchase ticket for boarding Metr
 ### How to run
 - metroBookingBackend must be running by following the above instructions before running the iOS app
 - Open the file `MetroBookingSystem.xcworkspace` in xCode and then run the app from the editor.
+
+## Known Issues
+Due to time restrctions there are few limitations for this implementation from the proposed spec: 
+- The current fare algorithm is not generic and only implemented for the sample data set.
+- Push notification is not implemented
